@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward New's Site</title>
+    <link rel="icon" href="favicon.ico">
+    <script>/* Analytics Script Tag Placeholder */</script>
+</head>
+<body>
+    <header>
+        <svg width="30" height="30" fill="green" stroke="black"><circle cx="15" cy="15" r="10" /></svg>
+        <nav>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+                <li><a href="#">Fun Stuffs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <h1>Here's What I've Been Up To Recently</h1>
+        <section>
+            <h2>What I've been Listening To</h2>
+            <figure>
+                <figcaption>Check out this cool song!</figcaption>
+                <audio controls src="assets/summer-walk-152722.mp3"></audio>
+            </figure>
+
+            <p>Here's another song I've really been enjoying!</p>
+            <!-- Bad formatting because it has to be fixed with CSS -->
+            <iframe src="https://open.spotify.com/embed/track/1aDCjyFTiY6EG9mbl7HMog?utm_source=generator" width="100" height="152" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+
+        <section>
+            <h2>What I've been Learning</h2>
+            <h3>The <code>&LeftAngleBracket;canvas&RightAngleBracket;</code> tag</h3>
+            <canvas id="canvas"></canvas>
+            <script>
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "blue";
+                ctx.beginPath();
+                ctx.moveTo(70, 50);
+                ctx.lineTo(100, 75);
+                ctx.lineTo(100, 25);
+                ctx.fill();
+            </script>
+        </section>
+
+        <section>
+            <h2>What Has Made Me Laugh</h2>
+            <p>Here's a funny haiku I came across recently:</p>
+            <blockquote>
+                I am so tired <br>
+                where did all my money go <br>
+                my back is hurting
+            </blockquote>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+                <li><a href="#">Fun Stuffs</a></li>
+            </ul>
+        </nav>
+
+        <span>&copy; Copyright 2023, Edward New</span>
+
+        <pre> |\__/,|   (`\
+ |_ _  |.--.) )
+ ( T   )     /
+(((^_(((/(((_</pre>
+
+    </footer>
+</body>
+</html>
