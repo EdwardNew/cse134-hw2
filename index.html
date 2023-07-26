@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward New's Site</title>
-    <link rel="icon" href="assets/favicon.ico">
-    <style>
-        section {
-            margin: 1em;
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
     <script>/* Analytics Script Tag Placeholder */</script>
 </head>
 <body>
     <header>
-        <svg width="30" height="30" fill="green" stroke="black"><circle cx="15" cy="15" r="10"/></svg>
+        <!-- <svg width="30" height="30" fill="green" stroke="black"><circle cx="15" cy="15" r="10"/></svg> -->
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -29,8 +24,10 @@
     </header>
     <main>
         <section id="hero">
-            <h1>Developing Developer</h1>
-            <p>Hi, I'm Edward! Welcome to my playground.</p>
+            <div>
+                <h1>Developing Developer</h1>
+                <p>Hi, I'm Edward! Welcome to my playground.</p>
+            </div>
             <video autoplay controls loop muted>
                 <source src="assets/duckbath.mp4" type="video/mp4">
                 <p>Uh Oh! Something went wrong with the video :(</p>
@@ -39,17 +36,11 @@
 
         <section id="about-me">
             <h2>About Me</h2>
-            <p>I'm a current <strong>junior</strong> at <em>The University of California, San Diego</em> double majoring in <strong>Math-Computer Science</strong> and <strong>Data Science</strong>.</p>
+            <p class="subtitle">I'm a current <strong>junior</strong> at <em>The University of California, San Diego</em> double majoring in <strong>Math-Computer Science</strong> and <strong>Data Science</strong>.</p>
             <table>
-                <caption>Education</caption>
-                <colgroup>
-                    <col style="background-color: lightgray;">
-                    <col>
-                    <col>
-                </colgroup>
                 <tr>
                     <th scope="row">Relavant Courses</th>
-                    <td>
+                    <td colspan="3">
                         <details>
                             <summary>Programming</summary>
                             <ul>
@@ -57,8 +48,6 @@
                                 <li>Computer Organization and Systems Programming</li>
                             </ul>
                         </details>
-                    </td>
-                    <td>
                         <details>
                             <summary>Math</summary>
                             <ul>
@@ -71,7 +60,7 @@
                 </tr>
                 <tr>
                     <th scope="row">Honors</th>
-                    <td colspan="2">
+                    <td colspan="3">
                         <details>
                             <summary>Provost Honors</summary>
                             <ol>
@@ -86,49 +75,46 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">GPA</th>
-                    <td colspan="2">4.0</td>
-                </tr>
-                <tr>
-                    <th scope="row">Estimated Graduation</th>
-                    <td colspan="2"><i>June 2025</i></td>
+                    <th scope="row">GPA:</th>
+                    <td>4.0</td>
+                    <th scope="row">Estimated Graduation:</th>
+                    <td><i>June 2025</i></td>
                 </tr>
             </table>
         </section>
 
         <section id="skills">
             <h2>Technical Skills</h2>
-            <p>Here are just some of the things I can do!</p>
+            <p class="subtitle">Here are just some of the things I can do!</p>
+                <details open>
+                    <summary>Front-End Web Development</summary>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Three.Js</li>
+                        <li>Liquid</li>
+                        <li>Jekyll</li>
+                        <li>Figma</li>
+                    </ul>
+                </details>
 
-            <div>
-                <h3>Front-End Web Development</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Sass</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>Three.Js</li>
-                    <li>Liquid</li>
-                    <li>Jekyll</li>
-                    <li>Figma</li>
-                </ul>
-            </div>
+                <details>
+                    <summary>Gereral Purpose Programming</summary>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>ARM Assembly</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Linux/Unix environments</li>
+                    </ul>
+                </details>
 
-            <div>
-                <h3>Gereral Purpose Programming</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>ARM Assembly</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Linux/Unix environments</li>
-                </ul>
-            </div>
-            
             <aside>
                 <p>I'm also a conversational speaker in <b>Mandarin</b> and <b>Shanghai Dialect</b></p>
             </aside>
@@ -136,56 +122,62 @@
 
         <section id="projects">
             <h2>My Projects</h2>
+            <p class="subtitle">Here's how I put my skills to use!</p>
+            <div>
+                <a href="https://sgf.ucsd.edu/" target="_blank">
+                    <figure>
+                        <picture>
+                            <source type="image/webp" srcset="assets/sgf.webp">
+                            <img src="assets/sgf.jpg" alt="thumbnail of the Sun God website: countdown counting down to Sun God Festival with beige canvas background and picture frames floating off to the sides">
+                        </picture>
+                        <figcaption>Sun God Festival</figcaption>
+                    </figure>
+                </a>
 
-            <figure>
-                <picture>
-                    <source type="image/webp" srcset="assets/sgf.webp">
-                    <img src="assets/sgf.jpg" alt="thumbnail of the Sun God website: countdown counting down to Sun God Festival with beige canvas background and picture frames floating off to the sides">
-                </picture>
-                <figcaption>Sun God Festival</figcaption>
-            </figure>
+                <a href="https://journeytothehorizon.ucsd.edu/" target="_blank">
+                    <figure>
+                        <picture>
+                            <source type="image/webp" srcset="assets/horizon.webp">
+                            <img src="assets/horizon.jpg" alt="thumbnail of the Horizon website: countdown counting down to Horizon with black starry background and a brown bear in a space suit floating off to the side">
+                        </picture>
+                        <figcaption>Horizon</figcaption>
+                    </figure>
+                </a>
 
-            <figure>
-                <picture>
-                    <source type="image/webp" srcset="assets/horizon.webp">
-                    <img src="assets/horizon.jpg" alt="thumbnail of the Horizon website: countdown counting down to Horizon with black starry background and a brown bear in a space suit floating off to the side">
-                </picture>
-                <figcaption>Horizon</figcaption>
-            </figure>
+                <a href="https://hps-ucsd-2020.github.io/Home.html" target="_blank">
+                    <figure>
+                        <picture>
+                            <source type="image/webp" srcset="assets/hps.webp">
+                            <img src="assets/hps.jpg" alt="thumbnail of the human powered submarine website: team picture with the submarine">
+                        </picture>
+                        <figcaption>Human Powered Submarine</figcaption>
+                    </figure>
+                </a>
 
-            <figure>
-                <picture>
-                    <source type="image/webp" srcset="assets/hps.webp">
-                    <img src="assets/hps.jpg" alt="thumbnail of the human powered submarine website: team picture with the submarine">
-                </picture>
-                <figcaption>Human Powered Submarine</figcaption>
-            </figure>
-
-            <!-- Project template to fill in dynamically with JS -->
-            <template>
-                <figure>
-                    <picture>
-                        <source type="image/webp" srcset="">
-                        <img src="" alt="">
-                    </picture>
-                    <figcaption></figcaption>
-                </figure>
-            </template>
+                <!-- Project template to fill in dynamically with JS -->
+                <template>
+                    <figure>
+                        <picture>
+                            <source type="image/webp" srcset="">
+                            <img src="" alt="">
+                        </picture>
+                        <figcaption></figcaption>
+                    </figure>
+                </template>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Let's Talk!</h2>
             <form action="placeholder.php" method="POST">
-                <fieldset>
+                <fieldset id="form-info">
                     <legend>Information</legend>
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" placeholder="John" required>
                     <label for="lastName">Last Name:</label>
                     <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
-
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="example@example.com" required>
-
                     <label for="phone-number">Phone Number:</label>
                     <input type="tel" id="phone-number" name="phone-number" placeholder="(xxx) xxx-xxxx" pattern="^\(\d{3}\)\s\d{3}-\d{4}">
                 </fieldset>
@@ -210,14 +202,13 @@
                     </datalist>
 
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Write your message here!"></textarea>
+                    <textarea name="message" id="message" rows="10" placeholder="Write your message here!"></textarea>
                 </fieldset>
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
     <footer>
-        <hr>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>

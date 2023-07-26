@@ -1,0 +1,360 @@
+:root {
+    --main-theme-color: #FFFFFF;
+    --secondary-theme-color: #e8e8e8;
+    --accent-color: #578cff;
+
+    --heading-fs: 3rem;
+    --p-fs: 1.25rem;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url("/assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url("/assets/fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Inter SemiBold';
+    src: url("/assets/fonts/Inter-SemiBold.ttf");
+}
+
+html {
+    font-family: "Inter Regular";
+    font-size: 1rem;
+}
+
+h1, h2{
+    font-family: "Inter Bold";
+    font-size: var(--heading-fs);
+}
+
+h2, .subtitle {
+    text-align: center;
+    margin: 1rem;
+}
+
+p {
+    font-size: var(--p-fs);
+}
+
+pre {
+    font-size: 0.5rem;
+}
+
+nav {
+    font-family: "Inter SemiBold";
+    margin: 1rem;
+}
+
+body {
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+section {
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(odd) {
+    background-color: var(--secondary-theme-color);
+}
+
+#hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+#hero video {
+    border-radius: 10px;
+    width: 40vw;
+}
+
+table {
+    margin: 5rem 10rem 0;
+}
+
+th {
+    padding: 4rem 0;
+    font-size: 2rem;
+    text-align: left;
+}
+
+details {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1rem;
+    word-wrap: break-word;
+}
+
+details summary {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+details[open] summary {
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5em;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 1.5fr 0.25fr;
+    grid-template-rows:  0.25fr 0.25fr 0.25fr 0.25fr;
+}
+
+#skills summary {
+    background-color: var(--accent-color);
+}
+
+#skills>h2 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+}
+
+#skills>p {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+}
+
+#skills aside {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#projects div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects figure {
+    transition: ease-in 0.25s;
+}
+
+figure img {
+    max-width: 20vw;
+}
+
+figcaption{
+    text-align: center;
+    font-family: "Inter SemiBold";
+    font-size: larger;
+    margin-top: 1rem;
+}
+
+#projects figure:hover {
+    transform: scale(1.05);
+}
+
+#projects img {
+    border-radius: 5px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    margin: 2rem 0;
+    border-radius: 5px;
+}
+
+#form-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+input, select, textarea {
+    border: none;
+    padding: 0.9rem 0.9rem;
+    margin: 0.5rem;
+    border-radius: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+}
+
+form > button {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    padding: 1rem 8rem;
+    border-radius: 5px;
+    font-family: "Inter SemiBold";
+    align-self: center;
+    transition: 10ms;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer span{
+    margin: 1rem;
+}
+
+#fun-stuffs h1 {
+    text-align: center;
+}
+
+#fun-stuffs h2 {
+    text-align: left;
+}
+
+#fun-stuffs section {
+    margin: 5rem 0;
+    background-color: var(--secondary-theme-color);
+}
+
+#music > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#music figcaption {
+    margin-bottom: 2rem;
+}
+
+#haiku p, #haiku blockquote {
+    text-align: center;
+}
+
+
+@media (max-width: 1400px) {
+    :root{
+        --heading-fs: 2rem;
+        font-size: 13px;
+    }
+
+    body {
+        margin: 0 5rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, select, textarea {
+        border: none;
+        border-radius: 3px;
+    }
+
+    table {
+        margin: 0;
+    }
+    
+    th {
+        padding: 4rem 0;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #music > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure audio {
+        align-self: center;
+    }
+
+    #projects div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure img {
+        max-width: 50vw;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    figure img {
+        max-width: 70vw;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}
