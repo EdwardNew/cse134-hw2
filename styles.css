@@ -1,5 +1,5 @@
 :root {
-    --main-theme-color: #FFFFFF;
+    --main-theme-color: #ffffff;
     --secondary-theme-color: #e8e8e8;
     --accent-color: #578cff;
 
@@ -9,17 +9,17 @@
 }
 
 @font-face {
-    font-family: 'Inter Regular';
+    font-family: "Inter Regular";
     src: url("/assets/fonts/Inter-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Inter Bold';
+    font-family: "Inter Bold";
     src: url("/assets/fonts/Inter-Bold.ttf");
 }
 
 @font-face {
-    font-family: 'Inter SemiBold';
+    font-family: "Inter SemiBold";
     src: url("/assets/fonts/Inter-SemiBold.ttf");
 }
 
@@ -28,12 +28,14 @@ html {
     font-size: 1rem;
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: "Inter Bold", Arial, Helvetica, sans-serif;
     font-size: var(--heading-fs);
 }
 
-h2, .subtitle {
+h2,
+.subtitle {
     text-align: center;
     margin: 1rem;
 }
@@ -135,25 +137,25 @@ details[open] summary {
 
 #skills {
     display: grid;
-    grid-template-columns: 1.5fr 0.25fr;
-    grid-template-rows:  0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: 3fr;
+    grid-template-rows: 0.25fr 0.25fr;
 }
 
 #skills summary {
     background-color: var(--accent-color);
 }
 
-#skills>h2 {
+/* #skills > h2 {
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 1;
 }
 
-#skills>p {
+#skills > p {
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 2;
-}
+} */
 
 #skills aside {
     grid-column-start: 2;
@@ -165,7 +167,7 @@ details[open] summary {
     padding: 3rem;
 }
 
-#projects div{
+#projects div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -180,7 +182,7 @@ figure img {
     max-width: 20vw;
 }
 
-figcaption{
+figcaption {
     text-align: center;
     font-family: "Inter SemiBold", Arial, Helvetica, sans-serif;
     font-size: larger;
@@ -209,7 +211,9 @@ fieldset {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     border: none;
     padding: 0.9rem 0.9rem;
     margin: 0.5rem;
@@ -237,14 +241,13 @@ button:active {
     transform: scale(0.95);
 }
 
-
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer span{
+footer span {
     margin: 1rem;
 }
 
@@ -271,13 +274,13 @@ footer span{
     margin-bottom: 2rem;
 }
 
-#haiku p, #haiku blockquote {
+#haiku p,
+#haiku blockquote {
     text-align: center;
 }
 
-
 @media (max-width: 1400px) {
-    :root{
+    :root {
         --heading-fs: 2rem;
         font-size: 13px;
     }
@@ -300,7 +303,9 @@ footer span{
         flex-direction: column;
     }
 
-    input, select, textarea {
+    input,
+    select,
+    textarea {
         border: none;
         border-radius: 3px;
     }
@@ -308,7 +313,7 @@ footer span{
     table {
         margin: 0;
     }
-    
+
     th {
         padding: 4rem 0;
         font-size: 2rem;
@@ -330,7 +335,7 @@ footer span{
         align-self: center;
     }
 
-    #projects div{
+    #projects div {
         display: flex;
         flex-direction: column;
         align-items: center;
